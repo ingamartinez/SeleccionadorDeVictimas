@@ -12,5 +12,9 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('dashboard.randomStudent');
 });
+
+Route::resource('seleccionarVictima','VictimaController');
+
+Route::resource('estudiante','EstudianteController');
